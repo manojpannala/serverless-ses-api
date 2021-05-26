@@ -18,3 +18,10 @@ functions:
             path: hello-test
             method: GET
             cors: true
+  sendEmail:
+    handler: sendEmail.handler
+    events: 
+        - http:
+            path: send-email
+            method: POST
+            cors: true
