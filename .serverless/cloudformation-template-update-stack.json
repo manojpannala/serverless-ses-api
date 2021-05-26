@@ -174,7 +174,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api/dev/1622012847553-2021-05-26T07:07:27.553Z/api.zip"
+          "S3Key": "serverless/api/dev/1622014006648-2021-05-26T07:26:46.648Z/api.zip"
         },
         "Handler": "handler.hello",
         "Runtime": "nodejs12.x",
@@ -199,7 +199,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api/dev/1622012847553-2021-05-26T07:07:27.553Z/api.zip"
+          "S3Key": "serverless/api/dev/1622014006648-2021-05-26T07:26:46.648Z/api.zip"
         },
         "Handler": "sendEmail.handler",
         "Runtime": "nodejs12.x",
@@ -217,24 +217,24 @@
         "SendEmailLogGroup"
       ]
     },
-    "HelloLambdaVersiontUANTdCjO2y7byl9w32eceZ6hXOwFWf80wIT0ES9Ibw": {
+    "HelloLambdaVersionTQT4AUa0rE5yTb3M4SDAhYSEyLAMJFCgaXjwwHBa0I": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "8DY/XfDOOTbxrbb1XoByjS0ZTQDKgP3eDYvetqKogy8="
+        "CodeSha256": "Vhc3dk1tR+MiWgMV1BBenNMzdoaPmdGZtI8KQng/iB4="
       }
     },
-    "SendEmailLambdaVersionsiTbzBmJFpSDsxD0TJ8SpTmp5EOFb3bIGoU0hJANs": {
+    "SendEmailLambdaVersionfGHFT3EVeKSIZBopicGFbH33BiJYjVBJZFv7Em7o": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SendEmailLambdaFunction"
         },
-        "CodeSha256": "8DY/XfDOOTbxrbb1XoByjS0ZTQDKgP3eDYvetqKogy8="
+        "CodeSha256": "Vhc3dk1tR+MiWgMV1BBenNMzdoaPmdGZtI8KQng/iB4="
       }
     },
     "ApiGatewayRestApi": {
@@ -455,7 +455,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1622012846381": {
+    "ApiGatewayDeployment1622014005495": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -557,7 +557,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersiontUANTdCjO2y7byl9w32eceZ6hXOwFWf80wIT0ES9Ibw"
+        "Ref": "HelloLambdaVersionTQT4AUa0rE5yTb3M4SDAhYSEyLAMJFCgaXjwwHBa0I"
       },
       "Export": {
         "Name": "sls-api-dev-HelloLambdaFunctionQualifiedArn"
@@ -566,7 +566,7 @@
     "SendEmailLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SendEmailLambdaVersionsiTbzBmJFpSDsxD0TJ8SpTmp5EOFb3bIGoU0hJANs"
+        "Ref": "SendEmailLambdaVersionfGHFT3EVeKSIZBopicGFbH33BiJYjVBJZFv7Em7o"
       },
       "Export": {
         "Name": "sls-api-dev-SendEmailLambdaFunctionQualifiedArn"
