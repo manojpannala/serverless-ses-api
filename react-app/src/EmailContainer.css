@@ -1,0 +1,17 @@
+.emailContainer {
+    margin: 10px;
+}
+
+.emailContainer form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.emailContainer form button {
+    width: 150px;
+}
+
+.errorMessage {
+    color: red;
+}
