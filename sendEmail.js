@@ -12,10 +12,18 @@ exports.handler = async event => {
         },
         Message: {
             Body:{
-                Text: { Data: text}
+                Text: { Data: text }
             },
-            
-        }
+            Subject: { Data: subject }
+        },
+        Source: from
+    }
+
+    try {
+        await ses.sendEmail(emailParams).promise();
+        return _200()
+    } catch (error) {
+        
     }
 
 };
