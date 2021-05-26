@@ -9,7 +9,7 @@
       "runtime": "nodejs12.x",
       "lambdaHashingVersion": "20201221",
       "profile": "ServerlessBot",
-      "region": "eu-central-",
+      "region": "eu-central-1",
       "iamRoleStatements": [
         {
           "Effect": "Allow",
@@ -194,7 +194,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/api/dev/1622012823698-2021-05-26T07:07:03.698Z/api.zip"
+                "S3Key": "serverless/api/dev/1622012847553-2021-05-26T07:07:27.553Z/api.zip"
               },
               "Handler": "handler.hello",
               "Runtime": "nodejs12.x",
@@ -219,7 +219,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/api/dev/1622012823698-2021-05-26T07:07:03.698Z/api.zip"
+                "S3Key": "serverless/api/dev/1622012847553-2021-05-26T07:07:27.553Z/api.zip"
               },
               "Handler": "sendEmail.handler",
               "Runtime": "nodejs12.x",
@@ -475,7 +475,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1622012822588": {
+          "ApiGatewayDeployment1622012846381": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -802,7 +802,7 @@
     "artifact": "C:\\Users\\manoj\\Documents\\serverless-ses\\api\\.serverless\\api.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/api/dev/1622012823698-2021-05-26T07:07:03.698Z",
+    "artifactDirectoryName": "serverless/api/dev/1622012847553-2021-05-26T07:07:27.553Z",
     "artifact": "api.zip"
   }
 }
