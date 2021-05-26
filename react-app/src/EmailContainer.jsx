@@ -32,7 +32,7 @@ const EmailContainer = () => {
         }
         setErrorMessage('');
 
-        Axios.post('', {
+        Axios.post('https://htugo3h44g.execute-api.eu-central-1.amazonaws.com/dev/send-email', {
             to: destinationEmail,
             subject,
             text,
